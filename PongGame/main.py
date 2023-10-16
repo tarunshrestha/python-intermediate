@@ -1,8 +1,11 @@
 from turtle import Turtle, Screen
 from paddle import Paddle
+<<<<<<< HEAD
 from ball import Ball
 import time
 from score import Score
+=======
+>>>>>>> 2dc9f75dcdf109bd29f30cb0727c386557d7232d
 
 screen = Screen()
 screen.bgcolor('black')
@@ -12,6 +15,7 @@ screen.tracer(0)
 
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
+<<<<<<< HEAD
 ball = Ball()
 score = Score()
 
@@ -42,5 +46,22 @@ while canplay :
     if ball.xcor() < -380:
         ball.reset_position()
         score.point(1)
+=======
+
+screen.listen()
+screen.onkey(r_paddle.go_up, 'up')
+screen.onkey(r_paddle.go_down, 'down')
+screen.onkey(l_paddle.go_up, 'w')
+screen.onkey(l_paddle.go_down, 's')
+
+
+
+
+
+
+canplay =True
+while canplay :
+    screen.update()
+>>>>>>> 2dc9f75dcdf109bd29f30cb0727c386557d7232d
 
 screen.exitonclick()

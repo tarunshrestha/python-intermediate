@@ -33,6 +33,7 @@ class Snake:
         new_segment.goto(position)
         self.segments.append(new_segment)
 
+<<<<<<< HEAD
     def reset(self):
         for seg in self.segments:
             seg.goto(1000, 1000)
@@ -41,6 +42,8 @@ class Snake:
         self.head = self.segments[0]
 
 
+=======
+>>>>>>> 2dc9f75dcdf109bd29f30cb0727c386557d7232d
     def extend(self):
         self.add_segment(self.segments[-1].position())
 
