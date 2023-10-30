@@ -16,7 +16,7 @@ while len(guessed) < 50:
     states = data['state'].to_list()  # data.state & Must be in list
     #print(ans_state)
     if ans_state == 'Exit':
-        missing = []
+        missing = []   # missing = [i for i in states if i not in guessed]
         for state in states:
             if state not in guessed:
                 missing.append(state)
