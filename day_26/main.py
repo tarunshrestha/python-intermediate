@@ -20,11 +20,24 @@
 
 
 # Dictionary: new_dic = {new_key:new_value for (key, value) in dic.items() if test}
-import random
-names = ['Ram', 'Hari', 'Sita', 'Rita', 'Beta']
-score = [10, 20, 30, 40, 50]
-student_scores = {i:random.randint(1,100) for i in names}
-passed_students = {student:score for (student, score)  in student_scores.items()  if score > 32}
+# import random
+# names = ['Ram', 'Hari', 'Sita', 'Rita', 'Beta']
+# score = [10, 20, 30, 40, 50]
+# student_scores = {i:random.randint(1,100) for i in names}
+# passed_students = {student:score for (student, score)  in student_scores.items()  if score > 32}
+#
+# print(student_scores)
+# print(passed_students)
 
-print(student_scores)
-print(passed_students)
+# Looping from dictionary
+students = {
+    'student': ['Tarun', 'arun', 'kima'],
+    'score': [50, 60, 70]
+}
+for (key, value) in students.items():
+    print(key)
+
+import pandas
+
+students_df = pandas.DataFrame(students)
+print(students_df)
